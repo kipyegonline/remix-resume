@@ -10,3 +10,7 @@ body {
     color-scheme: dark;
   }
 }
+
+.border-red{
+  border:1px solid red;
+}

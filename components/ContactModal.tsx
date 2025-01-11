@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { Loader,XCircle, } from 'lucide-react';
+import submitEmail from './EmailSubmit';
 // Add interfaces
 interface FormData {
     name: string;
@@ -20,29 +21,39 @@ export default function ContactModal({isOpen,onClose}:ModalProps) {
       });
       const [isSubmitting, setIsSubmitting] = useState(false);
       const [isSuccess, setIsSuccess] = useState(false);
+      const [isError,setError]=React.useState("")
     
       const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
         
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 2000));
-        
-        setIsSubmitting(false);
+       const response=await submitEmail({...formData,subject:"Web form"})
+       setIsSubmitting(false);
+       if(response){
         setIsSuccess(true);
+        setError("")
+ // Close modal after success
+
+ setTimeout(() => {
+  onClose();
+  setIsSuccess(false);
+  setFormData({ name: '', email: '', message: '' });
+  
+}, 3000);
+       }else{
+setError("Something went wrong while submitting . Try again later.")
+       }
         
-        // Close modal after success
-        setTimeout(() => {
-          onClose();
-          setIsSuccess(false);
-          setFormData({ name: '', email: '', message: '' });
-        }, 3000);
+      
+     
+        
+       
       };
     
       if (!isOpen) return null;
     
       return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" id="resume-modal">
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 w-full max-w-lg relative">
             <button 
               onClick={onClose}
@@ -111,8 +122,13 @@ export default function ContactModal({isOpen,onClose}:ModalProps) {
                     'Send Message'
                   )}
                 </button>
+                <div className='p-4'>
+                  {isSuccess && <p className='py-2 text-green-600'>Message submitted successfully</p>}
+                  {isError && <p className='py-2 text-red-600'>{isError}</p>}
+                </div>
               </form>
             )}
           </div>
         </div>)
 }
+

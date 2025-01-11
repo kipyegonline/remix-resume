@@ -26,6 +26,19 @@ export interface Project {
       openSource: false,
     },
     {
+      id: 1.5,
+      name: "Sky developers website",
+      languages: ["Typescript", "react"],
+      frameworks: ["React", "typescript", "Tailwind", "Remix js"],
+      short_des:
+        "A a website showcasing the projects and services offered by Sky developers, an engineering and construction company based in Kenya",
+      long_des: `A minimalistic single page applicaton of Sky developers co, about section,vision & mission as well as  listing the services offered by Sky developers including its completed and ongoing projects.`,
+      year: 2025,
+      repo: "",
+      link: "http://skydevelopers.co.ke",
+      openSource: false,
+    },
+    {
       id: 1.4,
       name: "Savon web app ",
       languages: ["Typescript"],

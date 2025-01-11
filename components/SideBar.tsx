@@ -9,16 +9,17 @@ export default function SideBar({setModal,darkMode}:Props) {
       <img 
         src="/vince_profile.jpg"
         alt="Profile"
-        className="w-60  h-60 rounded-full mb-4"
+        className={`w-60  h-60 rounded-full mb-4 ${darkMode ? "grayscale":"grayscale-0"} `}
       />
       <h2 className="text-xl font-bold mb-2">Web developer based in Nairobi, Kenya</h2>
-      <p className="text-sm mb-4">Technical writer at <a href="https://dev.to/kipyegonline" target="_blank" rel="noreferrer">Dev.to</a> Dev.to</p>
+      <p className="text-sm mb-4">Technical writer at <a href="https://dev.to/kipyegonline" target="_blank" rel="noreferrer">Dev.to</a></p>
       <p className="text-sm mb-4">Freelance Journalist</p>
       
       <MySocials/>
     </div>
-
+<hr className='mb-2 z-50'/>
    <KeySkilss/>
+   <hr className='mb-2'/>
 
    <OtherSkills/>
 

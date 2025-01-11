@@ -55,6 +55,7 @@ years.push(i)
     
 
   },[selectedTech])
+
   return (
     <div className={`min-h-screen flex flex-col md:flex-row transition-colors duration-200 ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
      
@@ -75,10 +76,11 @@ years.push(i)
           {/* Projects Grid */}
           <section className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
             <ProjectsComponents  _projects={_projects} darkMode={darkMode}/>
-            {selectedYear===2025 && <div className='flex flex-col items-center text-2xl w-full'><p>This app has been revamped and built on Remix js, react framework.</p></div>}
-            
+           
           
           </section>
+          {selectedYear===2025 && <div className='flex flex-col   w-full my-2'><p>This app has been revamped and built on Remix js, react framework.</p></div>}
+            
         </div>
         <div > <Footer/></div>
        

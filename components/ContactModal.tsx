@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { Loader,XCircle as x, XCircle, } from 'lucide-react';
+import { Loader,XCircle, } from 'lucide-react';
 // Add interfaces
 interface FormData {
     name: string;
@@ -43,7 +43,7 @@ export default function ContactModal({isOpen,onClose}:ModalProps) {
     
       return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 w-full max-w-md relative">
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 w-full max-w-lg relative">
             <button 
               onClick={onClose}
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"

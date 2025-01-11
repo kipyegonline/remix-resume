@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 type StringOrNumber="all"|number
 type Props={years:number[], setSelectedYear:(a:StringOrNumber)=>void, selectedYear:StringOrNumber,darkMode:boolean}

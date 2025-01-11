@@ -3,8 +3,8 @@ import ProfileApp from "components/profile";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Vincent Kipyegon | Resume" },
+    { name: "description", content: "Working resume of vincent Kipyegon, software developer specialised in fronted web development and mobile development" },
   ];
 };
 

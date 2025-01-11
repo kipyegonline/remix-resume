@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Sun, Moon} from "lucide-react"
 type Props={darkMode:boolean,setMode:()=>void}
 export default function Header({setMode,darkMode}:Props) {

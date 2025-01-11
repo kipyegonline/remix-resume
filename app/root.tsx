@@ -28,6 +28,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/png"/>
         <Meta />
         <Links />
       </head>
@@ -35,6 +36,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
+      
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3Z0M34RE0"></script>
+<script dangerouslySetInnerHTML={{__html:` window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z3Z0M34RE0');
+  `}}>
+ 
+</script>
       </body>
     </html>
   );

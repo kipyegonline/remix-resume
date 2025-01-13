@@ -7,15 +7,17 @@ import ContactModal from './ContactModal';
 import TechnologyComponent from './TechnologyComponent';
 import ProjectsComponents from "./ProjectsComponent"
 import Footer from './footer';
+import { useAppContext } from './context';
 
 const ProfileApp = () => {
 
   const [selectedYear, setSelectedYear] = useState<number | 'all'>('all');
   const [selectedTech, setSelectedTech] = useState<string | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  //const [darkMode, setDarkMode] = useState(false);
   const [_projects,setProjects]=React.useState(projects)
   const [technologies,setTechnologies]=React.useState<string[]>([])
+  const {darkMode, setDarkMode}=useAppContext()
   
   const getYears=()=>{
     const years=[]

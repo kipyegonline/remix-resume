@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import Portfolio from "components/PR/index";
 import ProfileApp from "components/profile";
 
 export const meta: MetaFunction = () => {
@@ -11,7 +12,10 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className=" min-h-screen mx-auto">
-    <ProfileApp/>
+      {/*  <ProfileApp/>*/}
+  
+
+    <Portfolio/>
     </div>
   );
 }

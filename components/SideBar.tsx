@@ -70,7 +70,7 @@ const OtherSkills=()=>{
         <h3 className="font-semibold mb-2">Other Skills</h3>
         <ul className="space-y-2 text-sm">
           <li>Public relations</li>
-          <li>Freelance journalism</li>
+          <li>Journalism</li>
           <li>Photography</li>
         </ul>
       </div>)

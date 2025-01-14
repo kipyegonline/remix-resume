@@ -5,7 +5,7 @@ export default function PRSidebar({isMenuOpen,setOpen,darkMode}:{isMenuOpen:bool
     const linkedin="https://www.linkedin.com/in/kipyegonline"
   return (
   
-    <div className={`fixed lg:static w-80   ${darkMode ? 'bg-gray-900 text-white':'bg=white text=gray-900'}  shadow-lg min-h-screen transform ${
+    <div className={`fixed lg:static w-80   ${darkMode ? 'bg-gray-900 text-white':'bg-white text-gray-900'}  shadow-lg min-h-screen transform ${
         isMenuOpen ? 'translate-x-0' : '-translate-x-full'
       } lg:translate-x-0 transition-all duration-300 ease-in-out z-30`}>
         <div className="flex flex-col h-full p-6">

@@ -15,7 +15,11 @@ const Portfolio = () => {
     "Photography and print journalism",
     "Photography editing (Adobe Photoshop, Adobe Lightroom, Capture One)",
     "Web development and design",
-    "Computer application packages"
+    "Graphic design",
+    "Digital marketing and social media management",
+    "Content creation and management",
+    "Brand management and corporate communications",
+  
   ];
 
   const experiences = [
@@ -51,7 +55,7 @@ const Portfolio = () => {
     }
   ];
   const {darkMode,setDarkMode}=useAppContext()
-const dmode=""
+
   return (
     <div className={`flex min-h-screen transition-colors ease-in-out duration-300  ${darkMode ? 'bg-gray-900 text-white ':''} `}>
       <ModeSwitcher darkMode={darkMode} setMode={()=>setDarkMode(!darkMode)}/>
@@ -73,7 +77,7 @@ const dmode=""
           <div className={` ${darkMode ? 'bg-gray-900 text-white ':''} rounded-lg shadow-lg p-6 `}>
             <h3 className="text-xl font-bold mb-4">About Me</h3>
             <p className={darkMode ? 'text-white':'text-gray-700'}>
-              An experienced journalist with a deep passion for agricultural and environmental storytelling. Over the past 5 years, I have reported extensively on innovative farming practices, impactful stories and rural development initiatives in the Rift Valley region.
+              An experienced public relations profession and a journalist with a deep passion for agricultural and environmental storytelling. Over the past 5 years, I have reported extensively on innovative farming practices, impactful stories and rural development initiatives in the Rift Valley region.
             </p>
           </div>
 

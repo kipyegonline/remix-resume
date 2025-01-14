@@ -6,6 +6,10 @@ export const useAppContext = () => React.useContext(AppContext) as AppContextTyp
 
 export default function AppProvider({children}:{children:React.ReactNode}) {
     const [darkMode, setDarkMode] = React.useState(false)
+    React.useEffect(()=>{
+        const isDark=matchMedia('(prefers-color-scheme: dark)').matches;
+        if(isDark)setDarkMode(true)
+    },[])
   return (
     <AppContext.Provider value={{darkMode, setDarkMode}}>
       {children}

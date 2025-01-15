@@ -1,6 +1,6 @@
 import React from "react";
 import type { MetaFunction } from "@remix-run/node";
-import { useParams, useSearchParams } from "@remix-run/react";
+
 import Portfolio from "components/PR/index";
 import ProfileApp from "components/profile";
 import { Loader } from "lucide-react";

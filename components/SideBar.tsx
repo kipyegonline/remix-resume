@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { ExternalLink, Github, Linkedin, Twitter } from 'lucide-react';
 type Props={setModal:()=>void,darkMode:boolean}
 export default function SideBar({setModal,darkMode}:Props) {
     
@@ -12,7 +12,7 @@ export default function SideBar({setModal,darkMode}:Props) {
         className={`w-60  h-60 rounded-full mb-4 ${darkMode ? "grayscale":"grayscale-0"} `}
       />
       <h2 className="text-xl font-bold mb-2">Web developer based in Nairobi, Kenya</h2>
-      <p className="text-sm mb-4">Technical writer at <a href="https://dev.to/kipyegonline" target="_blank" rel="noreferrer">Dev.to</a></p>
+      <p className="text-sm mb-4">Technical writer at <a href="https://dev.to/kipyegonline" className='text-blue-700' target="_blank" rel="noreferrer">Dev.to</a></p>
       <p className="text-sm mb-4">Freelance Journalist</p>
       
       <MySocials/>
@@ -66,12 +66,14 @@ const KeySkilss=()=>{
       </div>)
 }
 const OtherSkills=()=>{
+  const size=16;
     return( <div className="mb-6">
         <h3 className="font-semibold mb-2">Other Skills</h3>
-        <ul className="space-y-2 text-sm">
-          <li>Public relations</li>
-          <li>Journalism</li>
-          <li>Photography</li>
+        <ul className="space-y-2 text-sm" >
+         
+          <li><button onClick={()=>{window.open(location.search+'?pr',"_target")}}>Public relations <ExternalLink size={size}  className=' cursor-pointer inline ml-2 hover:text-blue-700 transition-colors duration-150 ease'/> </button></li>
+          <li><button onClick={()=>{window.open(location.search+'?pr',"_target")}}>Journalism <ExternalLink size={size}  className=' cursor-pointer inline ml-2 hover:text-blue-700 transition-colors duration-150 ease'/> </button></li>
+          <li><button onClick={()=>{window.open(location.search+'?pr',"_target")}}>Photography <ExternalLink  size={size} className=' cursor-pointer inline ml-2 hover:text-blue-700 transition-colors duration-150 ease'/> </button></li>
         </ul>
       </div>)
 }

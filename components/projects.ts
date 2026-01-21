@@ -13,6 +13,32 @@ export interface Project {
 
 export const projects: Array<Project> = [
   {
+    id: 1.7,
+    name: "Election watch app",
+    languages: ["Typescript", "Next js"],
+    frameworks: ["React", "typescript", "Tailwind", "Remix js"],
+    short_des:
+      "A web application that is used to monitor elections in West Africa by tracking misinformation, enhancing transparency, and safeguarding press freedom during electoral processes.",
+    long_des: `This tool aims to support and improve election monitoring by leveraging data-driven insights to combat misinformation, bolster transparency, and protect press freedom during electoral processes in West Africa and beyond. Users upload files containing election data, which the app then processes to generate visualizations and reports that aid in monitoring and analysis.`,
+    year: 2025,
+    repo: "",
+    link: "https://electionwatch-5a774.web.app/",
+    openSource: false,
+  },
+  {
+    id: 1.8,
+    name: "Keyman stores",
+    languages: ["Typescript", "Laravel"],
+    frameworks: ["React", "typescript", "Tailwind", "Next js"],
+    short_des:
+      "AI powered e-commerce web application for Keyman stores, a tool for construction secto in kenya to help suppliers connect with customers via geolocation and AI product recommendations",
+    long_des: `The application allows customers to create contracts with customers on services,goods and professional services within construction industry.`,
+    year: 2025,
+    repo: "",
+    link: "https://keymanstores.com/",
+    openSource: false,
+  },
+  {
     id: 1,
     name: "Image Reader AI app",
     languages: ["Typescript", "Laravel"],

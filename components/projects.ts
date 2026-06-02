@@ -13,6 +13,32 @@ export interface Project {
 
 export const projects: Array<Project> = [
   {
+    id: 1.9,
+    name: "Cyber Security Assessment tool",
+    languages: ["Javascript"],
+    frameworks: [],
+    short_des:
+      "A web application tat allows social justice organisations to measure and surface vulnerabilities in their cybersecurity approach.",
+    long_des: `This tool aims to help social justice organisations gauge cybercurity vulnerabilities. The four part assesments will then provide a summary insights of the results and the recommendations on areas of identified improvement`,
+    year: 2026,
+    repo: "",
+    link: "https://beta.cybercat.tools/",
+    openSource: false,
+  },
+  {
+    id: 2.0,
+    name: "Varsity Ville app",
+    languages: ["Javascript"],
+    frameworks: ["Laravel", "React", "typescript", "Tailwind", "Inertia js"],
+    short_des:
+      "A real estate management platform for managing households living in the expanse Varsity Ville estate in Ruiru .",
+    long_des: `The app allows the estate management to manage the households living in the estate, track their payments and generate reports. It also allows the residents to view their payment history and make payments online.`,
+    year: 2026,
+    repo: "",
+    link: "",
+    openSource: false,
+  },
+  {
     id: 1.7,
     name: "Election watch app",
     languages: ["Typescript", "Next js"],

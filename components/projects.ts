@@ -13,7 +13,7 @@ export interface Project {
 
 export const projects: Array<Project> = [
   {
-    id: 1.9,
+    id: 2.1,
     name: "Cyber Security Assessment tool",
     languages: ["Javascript"],
     frameworks: [],
@@ -27,6 +27,19 @@ export const projects: Array<Project> = [
   },
   {
     id: 2.0,
+    name: "Farmly app",
+    languages: ["Javascript", "Typescript"],
+    frameworks: ["react", "next js", "tailwind css", "Contentful"],
+    short_des:
+      "A web application for sharing information on best farming practices, organic farming in Kenya.",
+    long_des: `This app is a web application for sharing information on best farming practices, organic farming in Kenya, farmer stories, and research on sustainable agriculture. It serves as a platform for farmers to access valuable insights and resources related to organic farming techniques and sustainable agricultural practices. The app provides a user-friendly interface for farmers to explore articles, guides, and success stories from fellow farmers, fostering a community of knowledge sharing and support within the agricultural sector in Kenya.`,
+    year: 2026,
+    repo: "",
+    link: "https://farmlyapp.vercel.app/",
+    openSource: false,
+  },
+  {
+    id: 1.9,
     name: "Varsity Ville app",
     languages: ["Javascript"],
     frameworks: ["Laravel", "React", "typescript", "Tailwind", "Inertia js"],
